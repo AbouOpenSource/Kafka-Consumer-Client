@@ -50,18 +50,18 @@ public class ConsumerDemoWithThread {
     //add shutdown hook
     
     Runtime.getRuntime().addShutdownHook(new Thread(
-    		
-    		() -> {
-    			logger.info("Caught shutdown hook");
-    			((ConsumerRunnable) myConsumerRunnable).shutdown();
-    			try {
-					latch.await();
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-    			logger.info("Application has exited");
-    		}
+//    		
+//    		() -> {
+//    			logger.info("Caught shutdown hook");
+//    			((ConsumerRunnable) myConsumerRunnable).shutdown();
+//    			try {
+//					latch.await();
+//				} catch (InterruptedException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//    			logger.info("Application has exited");
+//    		}
     		
     		));
     

@@ -29,7 +29,7 @@ public class ProducerDemo {
 		
 		//create a producer record
 		
-		ProducerRecord<String, String> record = new ProducerRecord<String, String>("first_topic","hello-world");
+		ProducerRecord<String, String> record = new ProducerRecord<String, String>("first_topic","-world");
 		
 		
 		
